@@ -22,6 +22,10 @@ int partie(int tab[17][17]){
             annule();
         if action==4;
             passe();
+        if action==5;
+            sauvegarder_et_quitter();
+        if action==6;
+            quitter();
         tour+=1;
         test_fin_partie();
 }
@@ -41,11 +45,11 @@ t_joueur tour_de;
     affiche_msg_tour(tour_de.nom);
     scanf(("%d",&action);
     if (tour_de.barriere==0){
-        while ((action>1)&&(action<=4)){
+        while ((action>1)&&(action<=6)){
         scanf("%d",&action);}
     }
     else{
-    while ((action>=1)&&(action<=4)){
+    while ((action>=1)&&(action<=6)){
         scanf("%d",&action);}
     }
 return (action);
